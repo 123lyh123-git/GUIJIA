@@ -1,0 +1,8 @@
+<view class="tips_img">  
+    <image class="" src="{{src}}"  lazy-load>
+        
+    </image>
+     <icon class="" type="clear" size="23" color="red">
+        
+    </icon>
+</view>

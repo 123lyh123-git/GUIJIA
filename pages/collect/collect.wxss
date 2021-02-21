@@ -1,0 +1,20 @@
+.collect_wrap .collect_main navigator {
+  display: flex;
+  padding: 20rpx;
+  border-bottom: 1px solid #f3efef;
+}
+.collect_wrap .collect_main navigator image {
+  flex: 2;
+  width: 100%;
+  margin-right: 15rpx;
+}
+.collect_wrap .collect_main navigator .collect_info {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.collect_wrap .collect_main navigator .collect_info .collect_price {
+  color: var(--themeColor);
+  font-weight: 600;
+}

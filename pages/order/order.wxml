@@ -1,0 +1,20 @@
+<view class="order_tabs">
+    <tabs tabs="{{tabs}}" bindItemChange="handleItemChange">
+        <view class="order_wrap">
+            <view class="order_item" wx:for="{{orders}}" wx:key="order_id">
+                <view class="order_number_warp">
+                    <text>订单编号</text>
+                    <text>{{item.order_number}}</text>
+                </view>
+                <view class="order_price_warp">
+                    <text>订单价格</text>
+                    <text class="order_price">￥{{item.order_price}}</text>
+                </view>
+                <view class="order_data_warp">
+                    <text>订单日期</text>
+                    <text>{{item.newTime}}</text>
+                </view>
+            </view>
+        </view>
+    </tabs>
+</view>

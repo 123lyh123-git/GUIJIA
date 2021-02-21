@@ -1,0 +1,110 @@
+page {
+  background-color: #edece8;
+}
+.user_info_wrap {
+  height: 35vh;
+  background-color: var(--themeColor);
+  .user_img_warp {
+    position: relative;
+    .user_bg {
+      height: 35vh;
+      width: 100%;
+      filter: blur(2rpx);
+      transform: scale(1.1);
+    }
+    .user_img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      .user_icon {
+        width: 150rpx;
+        height: 150rpx;
+        border-radius: 50%;
+      }
+      .user_name {
+        color: white;
+        margin-top: 40rpx;
+      }
+    }
+  }
+  .user_login {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 5rpx;
+    color: white;
+  }
+}
+.user_container {
+  position: relative;
+
+  .user_main {
+    position: absolute;
+    width: 94%;
+    left: 50%;
+    top: -40rpx;
+    transform: translateX(-50%);
+    color: #666;
+    padding-bottom: 100rpx;
+    .history_wrap {
+      display: flex;
+      background-color: #fff;
+      padding: 20rpx;
+      navigator {
+        flex: 1;
+        text-align: center;
+        .his_num {
+          color: var(--themeColor);
+        }
+        .his_name {
+        }
+      }
+    }
+    .order_wrap {
+      background-color: #fff;
+      margin-top: 20rpx;
+      .order_titile {
+        width: 100%;
+        padding: 20rpx;
+        border-bottom: 1px solid #edece8;
+      }
+      .order_content_wray {
+        display: flex;
+        padding: 20rpx;
+        navigator {
+          flex: 1;
+          text-align: center;
+          .iconfont {
+            color: var(--themeColor);
+          }
+          .order_status {
+          }
+        }
+      }
+    }
+    .address_manage,
+    .share {
+      padding: 20rpx;
+      margin-top: 20rpx;
+      background-color: #fff;
+    }
+    .advise {
+      background-color: #fff;
+      margin-top: 20rpx;
+      .contact {
+        padding: 20rpx;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #edece8;
+      }
+      .feedback,
+      .about {
+        padding: 20rpx;
+        border-bottom: 1px solid #edece8;
+      }
+    }
+  }
+}

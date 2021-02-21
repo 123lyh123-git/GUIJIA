@@ -1,0 +1,62 @@
+page {
+  background-color: #edeeec;
+}
+.fb_warp {
+  padding: 10rpx;
+  color: #8d8f8b;
+}
+.fb_warp .fb_tips {
+  display: flex;
+  flex-wrap: wrap;
+}
+.fb_warp .fb_tips text {
+  width: 30%;
+  background-color: #fff;
+  padding: 10rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  text-align: center;
+}
+.fb_warp .fb_main {
+  background-color: #fff;
+  margin-top: 30rpx;
+}
+.fb_warp .fb_main textarea {
+  padding: 10rpx;
+}
+.fb_warp .fb_main .fb_tool {
+  display: flex;
+  flex-wrap: wrap;
+}
+.fb_warp .fb_main .fb_tool button {
+  width: 90rpx;
+  height: 90rpx;
+  font-size: 40rpx;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20rpx;
+  color: #cacbca;
+}
+.fb_warp .fb_main .fb_tool button:after {
+  display: block !important;
+}
+.fb_warp .btn_submit {
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: flex-end;
+}
+.fb_warp .btn_submit button {
+  width: 28%;
+  height: 80rpx;
+  margin: 0;
+  padding: 0;
+  background-color: #f4523d;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: normal!important;
+}

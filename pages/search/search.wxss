@@ -1,0 +1,37 @@
+page {
+  background-color: #dbdddb;
+}
+.search_warp {
+  display: flex;
+  padding: 20rpx;
+}
+.search_warp input {
+  flex: 1;
+  height: 60rpx;
+  background-color: #fff;
+  padding-left: 20rpx;
+  margin-right: 10rpx;
+}
+.search_warp button {
+  width: 110rpx !important;
+  height: 60rpx;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 60rpx;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+.search_main {
+  padding: 0 20rpx 20rpx 20rpx;
+}
+.search_main .search_item {
+  background-color: #fff;
+  border-bottom: 1px solid #f3f0f0;
+  height: 80rpx;
+  padding: 20rpx 10rpx;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

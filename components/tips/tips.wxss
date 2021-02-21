@@ -1,0 +1,16 @@
+.tips_img {
+  width: 100rpx;
+  height: 100rpx;
+  position: relative;
+  margin-left: 20rpx;
+}
+.tips_img image {
+  width: 100%;
+  height: 100%;
+  border-radius: 15rpx;
+}
+.tips_img icon {
+  position: absolute;
+  top: -22rpx;
+  right: -22rpx;
+}

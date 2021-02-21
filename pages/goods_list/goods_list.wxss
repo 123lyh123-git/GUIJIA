@@ -1,0 +1,30 @@
+.goodslist_tabs .goodslist_first navigator {
+  display: flex;
+  border-bottom: 1rpx solid #ccc;
+  padding: 10rpx 10px 10rpx 0;
+}
+.goodslist_tabs .goodslist_first navigator .goodslist_img {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goodslist_tabs .goodslist_first navigator .goodslist_img image {
+  width: 70%;
+}
+.goodslist_tabs .goodslist_first navigator .goodslist_info {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.goodslist_tabs .goodslist_first navigator .goodslist_info .goodslist_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.goodslist_tabs .goodslist_first navigator .goodslist_info .goodslist_price {
+  color: var(--themeColor);
+  font-size: 32rpx;
+}

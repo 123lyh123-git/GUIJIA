@@ -1,0 +1,14 @@
+.order_wrap .order_item {
+  padding: 20rpx;
+  border-bottom: 1px solid #f3f1f1;
+  line-height: 50rpx;
+}
+.order_wrap .order_item .order_number_warp,
+.order_wrap .order_item .order_price_warp,
+.order_wrap .order_item .order_data_warp {
+  display: flex;
+  justify-content: space-between;
+}
+.order_wrap .order_item .order_price {
+  color: var(--themeColor);
+}

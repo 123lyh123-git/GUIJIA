@@ -1,0 +1,40 @@
+<view class="category">
+    <view class="category_search">
+        <search />
+    </view>
+    <view class="category_container">
+        <!-- 左侧-start -->
+        <scroll-view class="category_menu" scroll-y>
+            <view class="menu {{index===currentIndex?'active':''}}" 
+            wx:for="{{categories_menu}}" 
+            wx:key="*this"
+            bindtap="handleItemTap"
+            data-index="{{index}}">
+                {{item}}
+            </view>
+        </scroll-view>
+        <!-- 左侧-end -->
+        <!-- 右侧-start -->
+        <scroll-view scroll-top="{{scrolltop}}" class="category_items" scroll-y>
+            <view class="items_group" wx:for="{{categories_items}}" wx:for-item="item1" wx:for-index="index1" wx:key="cat_id">
+                <view class="items_title">
+                    <text class="backslash">/</text>
+                    <text>{{item1.cat_name}}</text>
+                    <text class="backslash">/</text>
+                </view>
+                <view class="items_list">
+                    <navigator wx:for="{{item1.children}}" 
+                    wx:for-item="item2" 
+                    wx:for-index="index2" 
+                    wx:key="cat_id" 
+                    url="/pages/goods_list/goods_list?cid={{item2.cat_id}}"
+                    open-type="navigate">
+                        <image src="{{item2.cat_icon}}" mode="widthFix" lazy-load></image>
+                        <view class="items_name">{{item2.cat_name}}</view>
+                    </navigator>
+                </view>
+            </view>
+        </scroll-view>
+        <!-- 右侧-end -->
+    </view>
+</view>

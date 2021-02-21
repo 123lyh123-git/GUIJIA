@@ -1,0 +1,105 @@
+page {
+  background-color: #edece8;
+}
+.user_info_wrap {
+  height: 35vh;
+  background-color: var(--themeColor);
+}
+.user_info_wrap .user_img_warp {
+  position: relative;
+}
+.user_info_wrap .user_img_warp .user_bg {
+  height: 35vh;
+  width: 100%;
+  filter: blur(2rpx);
+  transform: scale(1.1);
+}
+.user_info_wrap .user_img_warp .user_img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.user_info_wrap .user_img_warp .user_img .user_icon {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.user_info_wrap .user_img_warp .user_img .user_name {
+  color: white;
+  margin-top: 40rpx;
+}
+.user_info_wrap .user_login {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 5rpx;
+  color: white;
+}
+.user_container {
+  position: relative;
+}
+.user_container .user_main {
+  position: absolute;
+  width: 94%;
+  left: 50%;
+  top: -40rpx;
+  transform: translateX(-50%);
+  color: #666;
+  padding-bottom: 100rpx;
+}
+.user_container .user_main .history_wrap {
+  display: flex;
+  background-color: #fff;
+  padding: 20rpx;
+}
+.user_container .user_main .history_wrap navigator {
+  flex: 1;
+  text-align: center;
+}
+.user_container .user_main .history_wrap navigator .his_num {
+  color: var(--themeColor);
+}
+.user_container .user_main .order_wrap {
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+.user_container .user_main .order_wrap .order_titile {
+  width: 100%;
+  padding: 20rpx;
+  border-bottom: 1px solid #edece8;
+}
+.user_container .user_main .order_wrap .order_content_wray {
+  display: flex;
+  padding: 20rpx;
+}
+.user_container .user_main .order_wrap .order_content_wray navigator {
+  flex: 1;
+  text-align: center;
+}
+.user_container .user_main .order_wrap .order_content_wray navigator .iconfont {
+  color: var(--themeColor);
+}
+.user_container .user_main .address_manage,
+.user_container .user_main .share {
+  padding: 20rpx;
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+.user_container .user_main .advise {
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+.user_container .user_main .advise .contact {
+  padding: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #edece8;
+}
+.user_container .user_main .advise .feedback,
+.user_container .user_main .advise .about {
+  padding: 20rpx;
+  border-bottom: 1px solid #edece8;
+}

@@ -1,0 +1,29 @@
+<view class="goodslist">
+    <view class="goodslist_search">
+        <search></search>
+    </view>
+    <view class="goodslist_tabs">
+        <tabs tabs="{{tabs}}" bindItemChange="handleItemChange">
+            <block wx:if="{{tabs[0].isActive}}">
+                <view class="goodslist_first">
+                    <navigator wx:for="{{goodslist}}" 
+                    wx:key="goods_id" 
+                    url="/pages/goods_detail/goods_detail?goods_id={{item.goods_id}}" 
+                    open-type="navigate">
+                        <view class="goodslist_img">
+                            <image class="" src="{{item.goods_small_logo?item.goods_small_logo:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1596692720082&di=9d78d837a9c6e925c15fce9872891e62&imgtype=0&src=http%3A%2F%2Fimg4.jiwu.com%2Fbuildpic%2F52%2F2799%2F2799364_m.jpg'}}" mode="widthFix" lazy-load></image>
+                        </view>
+                        <view class="goodslist_info">
+                            <view class="goodslist_name">
+                               {{item.goods_name}}
+                            </view>
+                            <view class="goodslist_price">¥{{item.goods_price}}</view>
+                        </view>
+                    </navigator>
+                </view>
+            </block>
+            <block wx:if="{{tabs[1].isActive}}">努力安排中...</block>
+            <block wx:if="{{tabs[2].isActive}}">努力安排中...</block>
+        </tabs>
+    </view>
+</view>

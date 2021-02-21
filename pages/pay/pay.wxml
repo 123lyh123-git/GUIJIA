@@ -1,0 +1,34 @@
+<view class="pay_container">
+    <view class="pay_address_wrap">
+        <view class="pay_address">
+            <view>收货人：{{addressdata.userName}}</view>
+            <view> {{addressdata.provinceName+addressdata.cityName+addressdata.countyName+addressdata.detailInfo}}</view>
+        </view>
+        <view class="pay_phone">{{addressdata.telNumber}}</view>
+    </view>
+    <view class="pay_title">购物车</view>
+    <view class="pay_item_wrap" wx:for="{{cartdata}}" wx:key="goods_id">
+        <view class="pay_item">
+            <view class="pay_img">
+                <image src="{{item.goods_small_logo}}" mode="widthFix" lazy-load></image>
+            </view>
+            <view class="pay_info">
+                <view class="pay_name">{{item.goods_name}}</view>
+                <view class="pay_price_wrap">
+                    <view class="pay_price">￥{{item.goods_price}}</view>
+                    <view class="pay_num">×{{item.num}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="pay_footer">
+    <view class="pay_total_wrap">
+        <view>
+            合计:
+            <text class="pay_total">￥{{totalmoney}}</text>
+        </view>
+        <view>包含运费</view>
+    </view>
+    <view class="pay_btn" bindtap="handleOrderPay">支付({{totalnum}})</view>
+</view>

@@ -1,0 +1,17 @@
+<view class="collect_tabs">
+    <tabs tabs="{{tabs}}" bindItemChange="handleItemChange">
+        <view class="collect_wrap">
+            <view class="collect_main">
+                <navigator wx:for="{{collect}}" wx:key="goods_id" url="" open-type="navigate">
+                <image src="{{item.goods_small_logo}}" mode="widthFix" lazy-load>
+                    
+                </image>
+                <view class="collect_info">
+                <view class="collect_title">{{item.goods_name}}</view>
+                <view class="collect_price">￥{{item.goods_price}}</view>
+                </view>
+                </navigator>
+            </view>
+        </view>
+    </tabs>
+</view>
