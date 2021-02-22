@@ -1,3 +1,10 @@
 # GUIJIA
-第一次尝试小程序商城
 ![Image text](https://s3.ax1x.com/2021/02/22/y7M9ht.png)
+![Image text](https://s3.ax1x.com/2021/02/22/y7Qpb4.png)
+![Image text](https://s3.ax1x.com/2021/02/22/y7QKVH.png)
+![Image text](https://s3.ax1x.com/2021/02/22/y7Q3Gt.png)
+![Image text](https://s3.ax1x.com/2021/02/22/y7QDGq.png)
+![Image text](https://s3.ax1x.com/2021/02/22/y7QszV.png)
+![Image text](https://s3.ax1x.com/2021/02/22/y7Q4iR.png)
+![Image text](https://s3.ax1x.com/2021/02/22/y7Q7QK.png)
+![Image text](https://s3.ax1x.com/2021/02/22/y7QbLD.png)
